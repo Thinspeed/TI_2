@@ -36,7 +36,7 @@ namespace TI2
 				throw new ArgumentException(string.Format("Impossible to generate private key for such {0}", nameof(eulerFunction)));
 			}
 
-			return coprimeNumbers[coprimeNumbers.Count - 1];
+			return coprimeNumbers[0];
 		}
 
 		int CalculatePrivateKey(int eulerFunction)
